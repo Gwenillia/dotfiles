@@ -1,0 +1,302 @@
+env:
+  browser: true
+  node: true
+  es6: true
+parserOptions:
+  ecmaVersion: 2022
+  sourceType: module
+reportUnusedDisableDirectives: true
+rules:
+  semi: 0
+  no-inline-comments: 2
+  multiline-comment-style:
+    - 2
+    - separate-lines
+  line-comment-position: 2
+  strict: 2
+  padding-line-between-statements:
+    - 2
+    - blankLine: always
+      prev: [multiline-block-like, directive]
+      next: "*"
+    - blankLine: always
+      prev: "*"
+      next: multiline-block-like
+  curly:
+    - 2
+    - all
+  max-len:
+    - 2
+    - code: 80
+      tabWidth: 2
+      ignoreUrls: true
+      ignoreStrings: true
+      ignoreTemplateLiterals: true
+      ignoreRegExpLiterals: true
+      ignorePattern: eslint-
+  max-lines:
+    - 2
+    - max: 90
+      skipBlankLines: true
+      skipComments: true
+  max-lines-per-function:
+    - 2
+    - max: 50
+      skipBlankLines: true
+      skipComments: true
+      IIFEs: true
+  max-statements:
+    - 2
+    - 10
+  max-statements-per-line:
+    - 2
+    - max: 2
+  complexity:
+    - 2
+    - 4
+  max-depth:
+    - 2
+    - 1
+  max-nested-callbacks:
+    - 2
+    - 1
+  no-shadow:
+    - 2
+    - builtinGlobals: true
+      hoist: all
+      allow:
+        - process
+        - Buffer
+  block-scoped-var: 2
+  no-implicit-globals:
+    - 2
+    - lexicalBindings: true
+  vars-on-top: 2
+  no-inner-declarations:
+    - 2
+    - functions
+  sort-vars: 2
+  no-magic-numbers:
+    - 2
+    - ignore: [-2, -1, 0, 1, 2, 3, 10, 0n, 1n]
+      enforceConst: true
+  init-declarations: 2
+  no-plusplus:
+    - 2
+    - allowForLoopAfterthoughts: true
+  operator-assignment: 2
+  logical-assignment-operators: 2
+  no-multi-assign: 2
+  prefer-object-spread: 2
+  no-param-reassign:
+    - 2
+    - props: true
+      ignorePropertyModificationsFor:
+        - process
+        - error
+        - req
+        - request
+        - res
+        - response
+        - state
+  id-length:
+    - 2
+    - max: 24
+      exceptions:
+        - t
+        - _
+  id-match:
+    - 2
+    - ^[A-Za-z0-9_]+$
+    - onlyDeclarations: true
+  no-underscore-dangle:
+    - 2
+    - enforceInMethodNames: true
+      allow: [_id]
+  no-new-native-nonconstructor: 2
+  no-unsafe-negation:
+    - 2
+    - enforceForOrderingRelations: true
+  no-negated-condition: 2
+  no-constant-binary-expression: 2
+  no-dupe-else-if: 2
+  no-nested-ternary: 2
+  no-lonely-if: 2
+  no-else-return:
+    - 2
+    - allowElseIf: false
+  for-direction: 2
+  guard-for-in: 2
+  no-restricted-syntax:
+    - 2
+    - SwitchStatement
+    - selector: SequenceExpression
+      message: The comma operator is confusing and a common mistake. Don’t use it!
+  default-case: 2
+  no-unused-labels: 2
+  no-extra-label: 2
+  no-label-var: 2
+  func-style: 2
+  no-loop-func: 2
+  func-names:
+    - 2
+    - as-needed
+  func-name-matching:
+    - 2
+    - considerPropertyDescriptor: true
+  prefer-arrow-callback:
+    - 2
+    - allowNamedFunctions: true
+  arrow-body-style: 2
+  max-params: 2
+  default-param-last: 2
+  prefer-spread: 2
+  prefer-rest-params: 2
+  require-yield: 2
+  grouped-accessor-pairs:
+    - 2
+    - getBeforeSet
+  getter-return: 2
+  no-setter-return: 2
+  no-empty-function: 2
+  object-shorthand: 2
+  prefer-destructuring: 2
+  no-unsafe-optional-chaining:
+    - 2
+    - disallowArithmeticOperators: true
+  no-constructor-return: 2
+  no-invalid-this: 2
+  class-methods-use-this: 2
+  consistent-this: 2
+  no-empty-static-block: 2
+  no-unused-private-class-members: 2
+  max-classes-per-file: 0
+  no-useless-concat: 2
+  prefer-template: 2
+  require-unicode-regexp: 2
+  no-nonoctal-decimal-escape: 2
+  prefer-numeric-literals: 2
+  radix:
+    - 2
+    - as-needed
+  prefer-exponentiation-operator: 2
+  no-bitwise: 2
+  no-promise-executor-return: 2
+  require-await: 2
+  no-await-in-loop: 2
+  require-atomic-updates: 2
+  no-sync: 2
+  no-duplicate-imports:
+    - 2
+    - includeExports: true
+  sort-imports:
+    - 2
+    - ignoreMemberSort: true
+      ignoreDeclarationSort: true
+  no-restricted-globals:
+    - 2
+    - global
+    - GLOBAL
+    - exports
+    - process
+    - Buffer
+  no-restricted-imports:
+    - 2
+    - patterns:
+        - group: [assert, assert/strict]
+          message: Please throw an Error instead
+  you-dont-need-lodash-underscore/omit: 0
+  no-continue: 2
+  no-buffer-constructor: 2
+  no-script-url: 2
+  no-alert: 2
+  no-unused-vars:
+    - 2
+    - {}
+  no-undef:
+    - 2
+    - typeof: true
+  no-useless-computed-key:
+    - 2
+    - enforceForClassMembers: true
+settings:
+  n:
+    tryExtensions: [.js, .cjs, .mjs, .json, .node, .yml, .yaml]
+overrides:
+  - files: ["**/*.cjs"]
+  - files: ["**/*.md/*.js"]
+    parserOptions:
+      ecmaFeatures:
+        impliedStrict: true
+    rules:
+      strict: 0
+      camelcase: 0
+      filenames/match-exported: 0
+      filenames/match-regex: 0
+      no-undef: 0
+      no-unused-vars: 0
+  - files: ["**/*.md/*.js", examples/**/*.js]
+    rules:
+      no-restricted-globals: 0
+      line-comment-position: 0
+      no-inline-comments: 0
+      no-magic-numbers: 0
+      strict: 0
+      no-empty-function: 0
+      no-empty: 0
+      filenames/match-exported: 0
+      id-length: 0
+      symbol-description: 0
+      no-restricted-imports:
+        - 2
+        - patterns: []
+  - files: [src/**/*.test.js]
+    rules:
+      max-nested-callbacks:
+        - 2
+        - 3
+      max-lines-per-function: 0
+      max-lines: 0
+      no-restricted-imports:
+        - 2
+        - patterns:
+            - group: [assert, assert/strict]
+              message: Please throw an Error instead
+            - group: ["./*", "!./helpers", "!./fixtures"]
+              message:
+                Individual files should not be imported in tests. Instead please
+                use import the main module.
+      no-empty: 0
+      no-empty-function: 0
+  - files: [src/helpers/**/*.js, src/fixtures/**/*.js]
+    rules:
+      no-restricted-imports: 0
+  - files: [src/fixtures/**/*.js]
+  - files: [ava.config.js]
+  - files: [gulpfile.js]
+  - files: [gulpfile.js, gulp/**/*.js]
+    rules:
+      no-restricted-globals:
+        - 2
+        - global
+        - GLOBAL
+        - exports
+        - process
+        - Buffer
+  - files: [src/main.js]
+    rules:
+      filenames/match-exported: 0
+  - files: [src/bin/**/*.js, src/bin.js]
+    rules:
+      no-restricted-globals:
+        - 2
+        - global
+        - GLOBAL
+        - exports
+        - process
+        - Buffer
+  - files: [benchmark/**/*.js]
+    rules:
+      no-magic-numbers: 0
+      filenames/no-index: 0
+      no-unused-expressions: 0

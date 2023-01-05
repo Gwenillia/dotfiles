@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/gwentripet-costet/Projects/Better-Equideow'
+let g:netrw_dirhist_2='/Users/gwentripet-costet/Projects/NewsDiscordPy/src'
+let g:netrw_dirhist_1='/Users/gwentripet-costet/Projects/NewsDiscordPy'
+let g:netrw_dirhist_0='/Users/gwentripet-costet/Projects/pong/models'
+let g:netrw_dirhist_9='/Users/gwentripet-costet/Projects/pong'
+let g:netrw_dirhist_8='/Users/gwentripet-costet/Projects/pong/models'
+let g:netrw_dirhist_7='/Users/gwentripet-costet/Projects/pong'
+let g:netrw_dirhist_6='/Users/gwentripet-costet/Projects/pong/models'
+let g:netrw_dirhist_5='/Users/gwentripet-costet/Projects/pong'
+let g:netrw_dirhist_4='/Users/gwentripet-costet/Projects'

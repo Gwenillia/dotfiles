@@ -1,0 +1,41 @@
+{
+  "coc-json|global": {
+    "json-schema-cache": {
+      "https://json.schemastore.org/tsconfig.json": {
+        "etag": "\"05ea279e2bed81:0\"",
+        "fileName": "a28507e42e8bfd5fba830538461d5db3.schema.json",
+        "updateTime": 1671515470058
+      },
+      "https://json.schemastore.org/web-manifest-combined.json": {
+        "etag": "\"43e0aa0326ad81:0\"",
+        "fileName": "b06e2f702dd4972ea2bb3d76ff088406.schema.json",
+        "updateTime": 1672930647165
+      },
+      "https://json.schemastore.org/foxx-manifest.json": {
+        "etag": "\"8020ee6d181ad91:0\"",
+        "fileName": "5e1deef4adbcb453011b95df734ed4a0.schema.json",
+        "updateTime": 1672930647168
+      },
+      "https://json.schemastore.org/webextension.json": {
+        "etag": "\"0723a2b8ad2d81:0\"",
+        "fileName": "b731fe11a3d127fd02a39912a2530816.schema.json",
+        "updateTime": 1672930647169
+      },
+      "https://json.schemastore.org/web-manifest-app-info.json": {
+        "etag": "\"b27da80326ad81:0\"",
+        "fileName": "37e25b60beaa201ec2222b96a2ea00d6.schema.json",
+        "updateTime": 1672930647985
+      },
+      "https://json.schemastore.org/web-manifest-share-target.json": {
+        "etag": "\"8059190326ad81:0\"",
+        "fileName": "cdeb8e92350ff78b8eec26631dae6f2d.schema.json",
+        "updateTime": 1672930647986
+      },
+      "https://json.schemastore.org/web-manifest.json": {
+        "etag": "\"8059190326ad81:0\"",
+        "fileName": "6edb6ea4435d040104641056c40c6326.schema.json",
+        "updateTime": 1672930647991
+      }
+    }
+  }
+}
