@@ -4,3 +4,6 @@
 [submodule ".kitty"]
 	path = .kitty
 	url = git@github.com:Gwenillia/.kitty.git
+[submodule ".fish"]
+	path = .fish
+	url = git@github.com:Gwenillia/.fish.git
