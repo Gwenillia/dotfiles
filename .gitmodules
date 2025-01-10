@@ -10,3 +10,6 @@
 [submodule ".tmux"]
 	path = .tmux
 	url = https://github.com/Gwenillia/.tmux.git
+[submodule ".ghostty"]
+	path = .ghostty
+	url = https://github.com/Gwenillia/.ghostty.git
