@@ -13,3 +13,9 @@
 [submodule ".ghostty"]
 	path = .ghostty
 	url = https://github.com/Gwenillia/.ghostty.git
+[submodule ".aerospace"]
+	path = .aerospace
+	url = https://github.com/Gwenillia/.aerospace.git
+[submodule ".sketchybar"]
+	path = .sketchybar
+	url = https://github.com/Gwenillia/.sketchybar.git
